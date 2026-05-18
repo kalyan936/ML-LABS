@@ -6,13 +6,13 @@ class AppHeader extends HTMLElement {
         <nav class="navbar">
             <div class="nav-container">
                 <a href="index.html" class="logo">
-                    <span class="logo-icon"></span> Aigocy
+                    <img src="logo.jpg" alt="ML Labs Logo" class="brand-logo"> ML LABS
                 </a>
                 <ul class="nav-links">
                     <li><a href="index.html" class="nav-link ${currentPath === 'index.html' ? 'active' : ''}">Home</a></li>
                     <li><a href="about.html" class="nav-link ${currentPath === 'about.html' ? 'active' : ''}">About Us</a></li>
                     <li><a href="services.html" class="nav-link ${currentPath === 'services.html' ? 'active' : ''}">Services</a></li>
-                    <li><a href="products.html" class="nav-link ${currentPath === 'products.html' ? 'active' : ''}">Platform</a></li>
+                    <li><a href="industries.html" class="nav-link ${currentPath === 'industries.html' ? 'active' : ''}">Industries</a></li>
                     <li><a href="contact.html" class="nav-link ${currentPath === 'contact.html' ? 'active' : ''}">Contact</a></li>
                 </ul>
                 <div class="menu-toggle" id="mobile-menu">
@@ -52,7 +52,7 @@ class AppFooter extends HTMLElement {
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="index.html" class="logo"><span class="logo-icon"></span> Aigocy</a>
+                    <a href="index.html" class="logo"><img src="logo.jpg" alt="ML Labs Logo" class="brand-logo"> ML LABS</a>
                     <p>Architecting tomorrow's enterprise intelligence with quantum-inspired neural networks and automated cognitive workflows.</p>
                 </div>
                 <div class="footer-links">
@@ -60,7 +60,7 @@ class AppFooter extends HTMLElement {
                     <a href="index.html">Home</a>
                     <a href="about.html">About Us</a>
                     <a href="services.html">Services</a>
-                    <a href="products.html">Platform</a>
+                    <a href="industries.html">Industries</a>
                 </div>
                 <div class="footer-links">
                     <h4>Legal & Docs</h4>
@@ -79,7 +79,7 @@ class AppFooter extends HTMLElement {
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Aigocy AI Agency. All rights reserved. Built for the cognitive era.</p>
+                <p>&copy; 2026 ML LABS AI Agency. All rights reserved. Built for the cognitive era.</p>
                 <div class="social-icons">
                     <a href="#" class="social-icon">IN</a>
                     <a href="#" class="social-icon">TW</a>
@@ -126,7 +126,6 @@ class AppCursor extends HTMLElement {
                 mouseY = e.clientY;
             });
 
-            // Smooth linear interpolation (LERP) for premium trailing cursor effect
             const animateCursor = () => {
                 dotX += (mouseX - dotX) * 0.3;
                 dotY += (mouseY - dotY) * 0.3;
@@ -142,7 +141,6 @@ class AppCursor extends HTMLElement {
             };
             animateCursor();
 
-            // Hover state expansion
             document.body.addEventListener('mouseover', (e) => {
                 const target = e.target.closest('a, button, .menu-toggle, .tab-btn, .faq-question');
                 if (target) {
