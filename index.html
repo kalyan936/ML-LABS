@@ -1,12 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ML Labs - AI Startup & Technology</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aigocy - Futuristic AI Agency</title>
+    <meta name="description" content="Aigocy - Shaping the future with artificial intelligence.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <app-cursor></app-cursor>
+    <app-header></app-header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="parallax-bg"></div>
+        <div class="hero-content reveal">
+            <h1 class="glitch-text" data-text="Next Generation AI">Next Generation AI</h1>
+            <p class="hero-subtitle">Empowering your enterprise with state-of-the-art neural networks and intelligent automation.</p>
+            <div class="hero-buttons">
+                <a href="services.html" class="btn btn-primary">Discover Services <span class="btn-glow"></span></a>
+                <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <!-- 3D Neural Network Abstract Element -->
+        <div class="hero-graphic">
+            <div class="sphere"></div>
+            <div class="orbit orbit-1"></div>
+            <div class="orbit orbit-2"></div>
+            <div class="orbit orbit-3"></div>
+        </div>
+    </section>
+
+    <app-footer></app-footer>
+
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
