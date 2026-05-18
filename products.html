@@ -7,7 +7,7 @@
     <meta name="description" content="Aigocy - Shaping the future with artificial intelligence.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,32 +15,81 @@
     <app-cursor></app-cursor>
     <app-header></app-header>
 
-    <!-- Products / Platform Section -->
-    <section id="products" class="products-section" style="margin-top: 100px;">
+    <!-- Platform Section -->
+    <section id="products" class="products-section" style="margin-top: 120px;">
         <div class="section-header reveal">
-            <h2>Aigocy Platform</h2>
-            <p>The operating system for the AI-driven enterprise.</p>
+            <div class="pill-badge"><span class="badge-dot"></span> ✦ FLAGSHIP OS</div>
+            <h2 class="gradient-text">Nexus Core OS</h2>
+            <p>The centralized, quantum-secured operating system for the AI-driven enterprise.</p>
         </div>
+
+        <!-- Interactive Platform Tabs -->
+        <div class="platform-tabs reveal">
+            <button class="tab-btn active" data-tab="tab-1">Neural Inference Engine</button>
+            <button class="tab-btn" data-tab="tab-2">Autonomous Pipelines</button>
+            <button class="tab-btn" data-tab="tab-3">Explainable AI (XAI) Suite</button>
+        </div>
+
         <div class="platform-showcase reveal">
             <div class="platform-info">
-                <h3>Nexus Core</h3>
-                <p>Our flagship platform provides a unified environment for training, deploying, and monitoring AI models at scale. Nexus Core integrates seamlessly with existing infrastructure.</p>
-                <ul class="feature-list">
-                    <li>Real-time model inference</li>
-                    <li>Automated data pipelines</li>
-                    <li>Explainable AI (XAI) dashboards</li>
-                </ul>
-                <a href="contact.html" class="btn btn-primary mt-4">Request Demo <span class="btn-glow"></span></a>
+                <!-- Tab 1 Content -->
+                <div id="tab-1" class="tab-content active">
+                    <h3>Real-Time Inference Architecture</h3>
+                    <p>Deploy massive language models and vision transformers at the absolute edge with sub-millisecond latency. Nexus Core leverages dynamic tensor quantization to maximize hardware utilization.</p>
+                    <ul class="feature-list">
+                        <li>Sub-10ms global inference latency</li>
+                        <li>Automated GPU/TPU load balancing</li>
+                        <li>Zero-downtime hot model swapping</li>
+                    </ul>
+                </div>
+
+                <!-- Tab 2 Content -->
+                <div id="tab-2" class="tab-content">
+                    <h3>Self-Healing Data Pipelines</h3>
+                    <p>Eliminate manual data engineering. Our autonomous ETL agents continuously ingest, clean, and vectorize enterprise data streams from over 200+ native integrations.</p>
+                    <ul class="feature-list">
+                        <li>Real-time continuous vectorization</li>
+                        <li>Autonomous schema drift detection</li>
+                        <li>End-to-end data lineage tracking</li>
+                    </ul>
+                </div>
+
+                <!-- Tab 3 Content -->
+                <div id="tab-3" class="tab-content">
+                    <h3>Full Mathematical Explainability</h3>
+                    <p>Gain absolute visibility into neural reasoning. The XAI Suite generates real-time saliency maps and decision trees, satisfying the most stringent regulatory compliance frameworks.</p>
+                    <ul class="feature-list">
+                        <li>Interactive node activation tracking</li>
+                        <li>Automated compliance reporting (GDPR/AI Act)</li>
+                        <li>Bias and fairness audit dashboards</li>
+                    </ul>
+                </div>
+
+                <a href="contact.html" class="btn btn-primary mt-4">Request Enterprise Demo <span class="btn-glow"></span></a>
             </div>
+
+            <!-- Enhanced Dashboard Visual -->
             <div class="platform-visual parallax-item">
                 <div class="dashboard-mockup">
                     <div class="mockup-header">
-                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                        <div class="mockup-dots">
+                            <span class="dot" style="background: #ff5f56;"></span>
+                            <span class="dot" style="background: #ffbd2e;"></span>
+                            <span class="dot" style="background: #27c93f;"></span>
+                        </div>
+                        <span class="mockup-title">NEXUS CORE // LIVE TELEMETRY</span>
+                        <div class="mockup-dots"><span class="dot" style="background: var(--color-blue);"></span></div>
                     </div>
                     <div class="mockup-body">
-                        <div class="chart-bar"></div>
-                        <div class="chart-line"></div>
-                        <div class="data-nodes"></div>
+                        <div class="chart-grid">
+                            <div class="chart-bar" data-height="40%" data-val="42K"></div>
+                            <div class="chart-bar" data-height="65%" data-val="68K"></div>
+                            <div class="chart-bar" data-height="85%" data-val="89K"></div>
+                            <div class="chart-bar" data-height="50%" data-val="52K"></div>
+                            <div class="chart-bar" data-height="95%" data-val="99.9K"></div>
+                            <div class="chart-bar" data-height="75%" data-val="78K"></div>
+                        </div>
+                        <p style="text-align: center; font-size: var(--text-xs); color: var(--color-ash); font-weight: 700; letter-spacing: 1px;">REAL-TIME INFERENCE THROUGHPUT (OPS/SEC)</p>
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@
     <meta name="description" content="Aigocy - Shaping the future with artificial intelligence.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,30 +16,87 @@
     <app-header></app-header>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section" style="margin-top: 100px;">
+    <section id="contact" class="contact-section" style="margin-top: 120px;">
         <div class="section-header reveal">
-            <h2>Initiate Contact</h2>
-            <p>Ready to integrate AI into your workflow?</p>
+            <div class="pill-badge"><span class="badge-dot"></span> ✦ SECURE TRANSMISSION</div>
+            <h2 class="gradient-text">Initiate Enterprise Ping</h2>
+            <p>Connect with our AI deployment architects to explore custom neural integrations for your organization.</p>
         </div>
-        <div class="contact-container reveal">
-            <form class="contact-form" id="contactForm">
+
+        <div class="contact-wrapper reveal">
+            <!-- Left Info Cards -->
+            <div class="contact-info-cards">
+                <div class="info-card glass-card">
+                    <div class="info-icon">📍</div>
+                    <div class="info-details">
+                        <h4>Global Headquarters</h4>
+                        <p>Aigocy Cognitive Tower, Silicon Avenue, San Francisco, CA 94107</p>
+                    </div>
+                </div>
+
+                <div class="info-card glass-card">
+                    <div class="info-icon">✉️</div>
+                    <div class="info-details">
+                        <h4>Direct Ping</h4>
+                        <p>transmissions@aigocy.ai<br>enterprise@aigocy.ai</p>
+                    </div>
+                </div>
+
+                <div class="info-card glass-card">
+                    <div class="info-icon">🛡️</div>
+                    <div class="info-details">
+                        <h4>Quantum Security</h4>
+                        <p>All transmissions are encrypted via 256-bit lattice-based cryptographic protocols.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Contact Form -->
+            <form class="contact-form glass-panel" id="contactForm">
                 <div class="input-group">
                     <input type="text" id="name" required placeholder=" ">
                     <label for="name">Your Name</label>
-                    <div class="input-glow"></div>
                 </div>
                 <div class="input-group">
                     <input type="email" id="email" required placeholder=" ">
-                    <label for="email">Email Address</label>
-                    <div class="input-glow"></div>
+                    <label for="email">Enterprise Email</label>
                 </div>
                 <div class="input-group">
-                    <textarea id="message" required placeholder=" " rows="4"></textarea>
-                    <label for="message">Message</label>
-                    <div class="input-glow"></div>
+                    <input type="text" id="company" required placeholder=" ">
+                    <label for="company">Organization Name</label>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">Send Transmission <span class="btn-glow"></span></button>
+                <div class="input-group">
+                    <textarea id="message" required placeholder=" " rows="5"></textarea>
+                    <label for="message">Transmission Payload (Project Details)</label>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Transmit Payload <span class="btn-glow"></span></button>
             </form>
+        </div>
+
+        <!-- FAQ Accordion Section -->
+        <div class="section-header reveal" style="margin-top: 160px;">
+            <div class="pill-badge"><span class="badge-dot"></span> ✦ KNOWLEDGE BASE</div>
+            <h2 class="gradient-text">Frequently Answered Queries</h2>
+            <p>Common inquiries regarding our deployment methodology, security protocols, and enterprise integrations.</p>
+        </div>
+
+        <div class="faq-accordion reveal">
+            <div class="faq-item active">
+                <div class="faq-question">What is your typical integration timeline for enterprise deployment? <span class="faq-toggle">+</span></div>
+                <div class="faq-answer"><p>Depending on the cleanliness of your existing data lakes and the complexity of the custom neural architecture, standard enterprise integrations are completed within 4 to 8 weeks, including full adversarial alignment testing.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How does Aigocy guarantee data privacy and IP protection? <span class="faq-toggle">+</span></div>
+                <div class="faq-answer"><p>We operate on a strict zero-retention policy. Your proprietary data is utilized exclusively for training your isolated model weights and is never shared, pooled, or retained on our core training clusters.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Can Nexus Core be deployed on on-premise air-gapped servers? <span class="faq-toggle">+</span></div>
+                <div class="faq-answer"><p>Absolutely. Nexus Core OS is engineered for total deployment flexibility, supporting fully air-gapped on-premise bare-metal servers, private clouds, and hybrid multi-cloud environments.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you offer post-deployment model monitoring and retraining? <span class="faq-toggle">+</span></div>
+                <div class="faq-answer"><p>Yes. Our flagship Nexus Core platform provides continuous real-time telemetry, autonomous drift detection, and automated retraining triggers to ensure your models maintain peak accuracy over time.</p></div>
+            </div>
         </div>
     </section>
 
