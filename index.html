@@ -184,7 +184,7 @@
         </div>
     </section>
 
-    <!-- AI Process Section (Horizontal Slider) -->
+    <!-- 8-Stage Deployment Carousel -->
     <section style="padding-top: 120px; padding-bottom: 80px;">
         <div class="section-header reveal">
             <div class="pill-badge"><span class="badge-dot"></span> ✦ INTEGRATION PIPELINE</div>
@@ -192,48 +192,85 @@
             <p>Our battle-tested, 8-stage deployment architecture ensures seamless integration with zero operational downtime.</p>
         </div>
 
-        <div class="process-slider-wrapper reveal">
-            <div class="process-slider-container">
-                <!-- 1 -->
-                <div class="process-step glass-card">
-                    <h3>1. Scope & Audit</h3>
-                    <p>Reviewing existing data infrastructures, enterprise security models, and compliance requirements.</p>
+        <div class="carousel-wrapper reveal" id="pipelineCarousel">
+            <button class="carousel-arrow carousel-prev" aria-label="Previous">&larr;</button>
+            <div class="carousel-viewport">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <div class="carousel-card glass-card">
+                            <div class="carousel-card-num">01</div>
+                            <h3>Scope &amp; Audit</h3>
+                            <p>Reviewing existing data infrastructures, enterprise security models, and compliance requirements before initiating any integration work.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-card glass-card">
+                            <div class="carousel-card-num">02</div>
+                            <h3>Data Ingestion &amp; Cleaning</h3>
+                            <p>Automated ETL pipelines sanitize, normalize, and structure complex enterprise data lakes into high-fidelity feature vectors.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-card glass-card">
+                            <div class="carousel-card-num">03</div>
+                            <h3>Align &amp; Vectorize</h3>
+                            <p>Enhancing training sets with semantic metadata, embedding alignment, and building enterprise validation checkpoints.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-card glass-card">
+                            <div class="carousel-card-num">04</div>
+                            <h3>Architecture Design</h3>
+                            <p>Designing custom neural network topologies and choosing optimal hyperparameter sets for target enterprise use cases.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-card glass-card">
+                            <div class="carousel-card-num">05</div>
+                            <h3>Distributed Training</h3>
+                            <p>Training model parameters across massive multi-GPU cloud compute clusters to achieve optimal convergence and accuracy.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-card glass-card">
+                            <div class="carousel-card-num">06</div>
+                            <h3>Adversarial Guardrails</h3>
+                            <p>Rigorous stress-testing against edge cases, hallucination vectors, and prompt injection attacks to guarantee stability.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-card glass-card">
+                            <div class="carousel-card-num">07</div>
+                            <h3>CI/CD Edge Deployment</h3>
+                            <p>Containerizing and deploying optimized models to secure private clouds, hybrid environments, and air-gapped on-premise nodes.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-card glass-card">
+                            <div class="carousel-card-num">08</div>
+                            <h3>Telemetry &amp; Retraining</h3>
+                            <p>Continuous model monitoring with active drift detection, automated feedback loops, and scheduled retraining pipelines.</p>
+                        </div>
+                    </div>
                 </div>
-                <!-- 2 -->
-                <div class="process-step glass-card">
-                    <h3>2. Ingestion & Clean</h3>
-                    <p>Automated ETL pipelines sanitize, normalize, and structure complex data lakes into structured feature vectors.</p>
-                </div>
-                <!-- 3 -->
-                <div class="process-step glass-card">
-                    <h3>3. Align & Vectorize</h3>
-                    <p>Enhancing training sets with semantic metadata and building enterprise validation checkpoints.</p>
-                </div>
-                <!-- 4 -->
-                <div class="process-step glass-card">
-                    <h3>4. Architecture Design</h3>
-                    <p>Designing custom neural network topologies and choosing optimal parameter sets for target use cases.</p>
-                </div>
-                <!-- 5 -->
-                <div class="process-step glass-card">
-                    <h3>5. Distributed Training</h3>
-                    <p>Training model parameters across massive multi-GPU cloud compute clusters for convergence.</p>
-                </div>
-                <!-- 6 -->
-                <div class="process-step glass-card">
-                    <h3>6. Adversarial Guardrails</h3>
-                    <p>Rigorous stress-testing against edge cases, hallucinations, and prompt injection vectors.</p>
-                </div>
-                <!-- 7 -->
-                <div class="process-step glass-card">
-                    <h3>7. CI/CD Edge Deployment</h3>
-                    <p>Containerizing and deploying optimized models to secure private clouds and air-gapped on-premise nodes.</p>
-                </div>
-                <!-- 8 -->
-                <div class="process-step glass-card">
-                    <h3>8. Telemetry & Retraining</h3>
-                    <p>Continuous model monitoring with active drift detection and automated feedback training loops.</p>
-                </div>
+            </div>
+            <button class="carousel-arrow carousel-next" aria-label="Next">&rarr;</button>
+
+            <!-- Progress Line -->
+            <div class="carousel-progress">
+                <div class="carousel-progress-bar" id="carouselProgressBar"></div>
+            </div>
+
+            <!-- Dot Indicators -->
+            <div class="carousel-dots" id="carouselDots">
+                <button class="carousel-dot active" data-index="0"></button>
+                <button class="carousel-dot" data-index="1"></button>
+                <button class="carousel-dot" data-index="2"></button>
+                <button class="carousel-dot" data-index="3"></button>
+                <button class="carousel-dot" data-index="4"></button>
+                <button class="carousel-dot" data-index="5"></button>
+                <button class="carousel-dot" data-index="6"></button>
+                <button class="carousel-dot" data-index="7"></button>
             </div>
         </div>
     </section>
