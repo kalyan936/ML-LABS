@@ -6,7 +6,7 @@ class AppHeader extends HTMLElement {
         <nav class="navbar">
             <div class="nav-container">
                 <a href="index.html" class="logo">
-                    <img src="logo.jpg" alt="ML-LABS PVT LTD Logo" class="brand-logo"> ML-LABS PVT LTD
+                    <img src="logo.jpg" alt="ML LABS Logo" class="brand-logo"> <span class="logo-text">ML LABS</span>
                 </a>
                 <ul class="nav-links">
                     <li><a href="index.html" class="nav-link ${currentPath === 'index.html' ? 'active' : ''}">Home</a></li>
@@ -52,7 +52,7 @@ class AppFooter extends HTMLElement {
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="index.html" class="logo"><img src="logo.jpg" alt="ML-LABS PVT LTD Logo" class="brand-logo"> ML-LABS PVT LTD</a>
+                    <a href="index.html" class="logo"><img src="logo.jpg" alt="ML LABS Logo" class="brand-logo"> <span class="logo-text">ML LABS</span></a>
                     <p>#52, 3rd Cross, Aswath Nagar, Marathahalli, Bengaluru, Karnataka-560037</p>
                     <p style="margin-top: 8px;">hr@themllabs.com | bharath@themllabs.com</p>
                 </div>
@@ -80,7 +80,7 @@ class AppFooter extends HTMLElement {
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 ML-LABS PVT LTD. All rights reserved. Built for the cognitive era.</p>
+                <p>&copy; 2026 ML LABS. All rights reserved. Built for the cognitive era.</p>
                 <div class="social-icons">
                     <a href="#" class="social-icon">IN</a>
                     <a href="#" class="social-icon">TW</a>

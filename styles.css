@@ -261,6 +261,12 @@ a {
     gap: 12px;
 }
 
+.logo-text {
+    color: var(--color-blue);
+    font-size: 28px;
+    font-weight: 800;
+}
+
 .brand-logo {
     height: 44px;
     width: auto;
