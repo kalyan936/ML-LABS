@@ -858,36 +858,42 @@ section {
 }
 
 /* Dark Showcase Cards (Industries & Services) */
-.showcase-section {
-    background: var(--color-ash-darker);
+section.showcase-section {
+    background-color: #0f172a !important;
     padding: 120px 5%;
-    max-width: 100%;
+    max-width: none;
+    width: 100%;
     margin: 0;
     position: relative;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
-.showcase-section .section-header h2 {
+section.showcase-section .section-header h2 {
     color: #ffffff;
 }
 
-.showcase-section .section-header h2.gradient-text {
-    background: linear-gradient(135deg, #ffffff 30%, var(--color-blue));
+section.showcase-section .section-header h2.gradient-text {
+    background: linear-gradient(135deg, #ffffff 30%, #0066ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.showcase-section .section-header p {
+section.showcase-section .section-header p {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.showcase-section .pill-badge {
+section.showcase-section .pill-badge {
     background: rgba(0, 102, 255, 0.15);
     border-color: rgba(0, 102, 255, 0.3);
+    color: #7cb8ff;
 }
 
 .showcase-grid {
-    display: flex;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
     gap: 16px;
     max-width: 1400px;
     margin: 0 auto;
@@ -896,25 +902,37 @@ section {
 
 .showcase-card {
     position: relative;
-    flex: 1;
+    flex: 1 1 0%;
     min-width: 0;
+    height: 100%;
     border-radius: 24px;
     overflow: hidden;
     cursor: none;
+    background-color: #1e293b;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
     transition: flex 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: none;
 }
 
 .showcase-card:hover {
-    flex: 2.5;
+    flex: 2.5 1 0%;
+    transform: none;
+    box-shadow: none;
 }
 
 .showcase-card-bg {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
     transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 0;
 }
 
 .showcase-card:hover .showcase-card-bg {
@@ -923,14 +941,17 @@ section {
 
 .showcase-card-overlay {
     position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.75) 100%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.75) 100%);
     transition: background 0.5s ease;
     z-index: 1;
 }
 
 .showcase-card:hover .showcase-card-overlay {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.85) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.88) 100%);
 }
 
 .showcase-card-content {
