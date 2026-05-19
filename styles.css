@@ -499,19 +499,20 @@ section {
 .stat-info h4 { font-size: var(--text-2xl); color: var(--color-blue); margin-bottom: 2px; }
 .stat-info p { font-size: var(--text-xs); color: var(--color-ash); font-weight: 600; text-transform: uppercase; }
 
-/* Infinite Marquee */
+/* Infinite Marquee with Cards */
 .marquee-section {
     padding: 60px 0;
     background: var(--color-bg-alt);
     border-top: 1px solid var(--color-ash-light);
     border-bottom: 1px solid var(--color-ash-light);
     overflow: hidden;
+    max-width: 100%;
 }
 
 .marquee-container {
     display: flex;
     width: 200%;
-    animation: marqueeScroll 25s linear infinite;
+    animation: marqueeScroll 30s linear infinite;
 }
 
 .marquee-container:hover {
@@ -522,28 +523,59 @@ section {
     display: flex;
     justify-content: space-around;
     width: 50%;
-    align-items: center;
+    align-items: stretch;
+    gap: 32px;
+    padding: 0 16px;
 }
 
-.marquee-item {
+.marquee-card {
+    flex-shrink: 0;
+    width: 280px;
+    padding: 0;
+    border-radius: 24px;
+    overflow: hidden;
     display: flex;
-    align-items: center;
-    gap: 16px;
+    flex-direction: column;
+    transition: var(--transition-bounce);
+    border: 1px solid rgba(0, 102, 255, 0.12);
+}
+
+.marquee-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    border-color: var(--color-blue);
+    box-shadow: 0 25px 50px rgba(0, 102, 255, 0.2);
+}
+
+.marquee-card-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--color-ash-light);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.marquee-card:hover .marquee-card-img {
+    transform: scale(1.08);
+}
+
+.marquee-card-body {
+    padding: 20px 24px;
+}
+
+.marquee-card-body h4 {
     font-family: var(--font-heading);
-    font-size: var(--text-2xl);
-    font-weight: 800;
+    font-size: var(--text-lg);
+    font-weight: 700;
     color: var(--color-ash-darker);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    margin-bottom: 6px;
 }
 
-.marquee-star {
-    color: var(--color-blue);
-    font-size: 1.8rem;
-    animation: spinStar 4s linear infinite;
+.marquee-card-body p {
+    font-size: var(--text-xs);
+    color: var(--color-ash);
+    font-weight: 500;
 }
 
-@keyframes spinStar { 100% { transform: rotate(360deg); } }
 @keyframes marqueeScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
 /* Animated Stat Counters Section */

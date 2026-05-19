@@ -6,7 +6,7 @@ class AppHeader extends HTMLElement {
         <nav class="navbar">
             <div class="nav-container">
                 <a href="index.html" class="logo">
-                    <img src="logo.jpg" alt="ML Labs Logo" class="brand-logo"> ML LABS
+                    <img src="logo.jpg" alt="ML-LABS PVT LTD Logo" class="brand-logo"> ML-LABS PVT LTD
                 </a>
                 <ul class="nav-links">
                     <li><a href="index.html" class="nav-link ${currentPath === 'index.html' ? 'active' : ''}">Home</a></li>
@@ -52,7 +52,7 @@ class AppFooter extends HTMLElement {
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="index.html" class="logo"><img src="logo.jpg" alt="ML Labs Logo" class="brand-logo"> ML LABS</a>
+                    <a href="index.html" class="logo"><img src="logo.jpg" alt="ML-LABS PVT LTD Logo" class="brand-logo"> ML-LABS PVT LTD</a>
                     <p>Architecting tomorrow's enterprise intelligence with quantum-inspired neural networks and automated cognitive workflows.</p>
                 </div>
                 <div class="footer-links">
@@ -79,7 +79,7 @@ class AppFooter extends HTMLElement {
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 ML LABS AI Agency. All rights reserved. Built for the cognitive era.</p>
+                <p>&copy; 2026 ML-LABS PVT LTD. All rights reserved. Built for the cognitive era.</p>
                 <div class="social-icons">
                     <a href="#" class="social-icon">IN</a>
                     <a href="#" class="social-icon">TW</a>
