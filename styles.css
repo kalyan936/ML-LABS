@@ -683,20 +683,86 @@ section {
     background: var(--color-bg-alt);
     border: 1px solid var(--color-ash-light);
     position: relative;
+    transition: var(--transition-bounce);
 }
 
 .step-number {
-    font-family: var(--font-heading);
-    font-size: var(--text-3xl);
-    font-weight: 800;
-    color: var(--color-blue-light);
-    -webkit-text-stroke: 1px var(--color-blue);
-    position: absolute;
-    top: 24px;
-    right: 30px;
+    display: none !important;
 }
 
 .process-step h3 { font-size: var(--text-xl); margin-bottom: 16px; margin-top: 20px; }
+
+/* Horizontal Slider Version */
+.process-slider-wrapper {
+    position: relative;
+    max-width: 1400px;
+    margin: 60px auto 0;
+    padding: 0 5%;
+}
+
+.process-slider-container {
+    display: flex;
+    gap: 32px;
+    overflow-x: auto;
+    padding: 24px 8px 40px;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    position: relative;
+    z-index: 1;
+}
+
+.process-slider-container::-webkit-scrollbar {
+    display: none;
+}
+
+.process-slider-container .process-step {
+    flex: 0 0 340px;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.process-slider-container .process-step:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-blue);
+    box-shadow: 0 25px 45px rgba(0, 102, 255, 0.12);
+}
+
+/* Horizontal Connector Line & Glowing Animation */
+.process-slider-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(0, 102, 255, 0.05), var(--color-blue), rgba(0, 102, 255, 0.05));
+    z-index: 0;
+    transform: translateY(-50%);
+}
+
+.process-slider-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    height: 2px;
+    width: 25%;
+    background: linear-gradient(90deg, transparent, #ffffff, var(--color-blue), #ffffff, transparent);
+    animation: flowPulse 8s linear infinite;
+    z-index: 0;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    .process-slider-container .process-step {
+        flex: 0 0 280px;
+    }
+}
 
 /* Bento Grid (About Core Values) */
 .bento-grid {
