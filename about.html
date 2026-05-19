@@ -16,74 +16,204 @@
     <app-cursor></app-cursor>
     <app-header></app-header>
 
-    <!-- About Section -->
-    <section id="about" class="about-section" style="margin-top: 120px;">
+    <!-- Hero Section -->
+    <section id="about-hero" class="hero-section" style="padding-top: 160px; padding-bottom: 80px;">
+        <div class="bg-grid"></div>
+        <div class="hero-content reveal">
+            <div class="pill-badge">
+                <span class="badge-dot"></span> ✦ COGNITIVE FOUNDATION
+            </div>
+            <h1 class="glitch-text gradient-text">Pioneering the Cognitive Era</h1>
+            <p class="hero-subtitle" style="margin-bottom: 0; font-size: var(--text-lg); line-height: 1.8;">
+                At <strong>ML-LABS Pvt Ltd</strong>, we believe artificial intelligence is the foundation of the cognitive era. Our mission is to <strong>transform complex enterprise challenges into automated, high-performance workflows</strong> that empower businesses, educators, and innovators alike.
+            </p>
+        </div>
+
+        <!-- 3D Interactive Cyber Globe Visual -->
+        <div class="hero-visual reveal">
+            <div class="cyber-globe-wrapper">
+                <div class="cyber-globe-3d">
+                    <div class="cyber-ring cyber-ring-1"></div>
+                    <div class="cyber-ring cyber-ring-2"></div>
+                    <div class="cyber-ring cyber-ring-3"></div>
+                    <div class="cyber-core"></div>
+                    <div class="cyber-particle p1"></div>
+                    <div class="cyber-particle p2"></div>
+                    <div class="cyber-particle p3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section id="who-we-are" style="padding: 100px 5%; background-color: var(--color-bg-alt); border-top: 1px solid var(--color-ash-light); border-bottom: 1px solid var(--color-ash-light); max-width: none; width: 100%;">
+        <div class="contact-wrapper" style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; align-items: center;">
+            <div class="reveal">
+                <div class="pill-badge"><span class="badge-dot"></span> ✦ THE TEAM</div>
+                <h2 class="gradient-text" style="font-size: var(--text-3xl); margin-bottom: 24px;">Who We Are</h2>
+                <p style="font-size: var(--text-base); line-height: 1.8; color: var(--color-ash); margin-bottom: 28px;">
+                    Founded in Bengaluru, India, ML-LABS is a team of <strong>data scientists, engineers, and designers</strong> passionate about building scalable, secure, and intuitive AI solutions. We combine deep technical expertise with human-centered design to ensure our products are not only powerful but also accessible.
+                </p>
+                <div style="display: flex; gap: 24px; flex-wrap: wrap;">
+                    <div class="glass-card" style="padding: 20px 24px; flex: 1; min-width: 200px;">
+                        <h4 style="color: var(--color-blue); font-size: var(--text-xl); margin-bottom: 6px;">Deep Technical Expertise</h4>
+                        <p style="font-size: var(--text-xs); color: var(--color-ash);">Custom deep learning & neural network training.</p>
+                    </div>
+                    <div class="glass-card" style="padding: 20px 24px; flex: 1; min-width: 200px;">
+                        <h4 style="color: var(--color-blue); font-size: var(--text-xl); margin-bottom: 6px;">Human-Centered Design</h4>
+                        <p style="font-size: var(--text-xs); color: var(--color-ash);">Intuitive UX translating math into production metrics.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bengaluru Tech Map Silhouette / Coordinates -->
+            <div class="reveal">
+                <div class="bengaluru-map-container spec-card">
+                    <div class="map-cyber-mesh"></div>
+                    <div class="map-radar-ring radar-1"></div>
+                    <div class="map-radar-ring radar-2"></div>
+                    <div class="map-radar-ring radar-3"></div>
+                    <div class="map-center-node"></div>
+                    <div class="map-location-tag">
+                        ML-LABS HQ
+                        <span>Bengaluru, India • 12.9716° N, 77.5946° E</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do Specializations Section -->
+    <section id="what-we-do" style="padding: 120px 5%;">
         <div class="section-header reveal">
-            <div class="pill-badge"><span class="badge-dot"></span> ✦ COGNITIVE PIONEERS</div>
-            <h2 class="gradient-text">Our Vision & Mission</h2>
-            <p>Pioneering the cognitive era through ethical, high-performance artificial intelligence.</p>
+            <div class="pill-badge"><span class="badge-dot"></span> ✦ SPECIALIZATIONS</div>
+            <h2 class="gradient-text">What We Do</h2>
+            <p>We build production-grade, battle-tested solutions tailored for cognitive performance.</p>
         </div>
 
-        <div class="timeline-container reveal">
-            <div class="timeline-line"></div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content glass-card">
-                    <h3>2024: The Genesis</h3>
-                    <p>Foundation of ML-LABS PVT LTD. Focused on fundamental AI research, algorithmic efficiency, and foundational neural architecture design.</p>
+        <div class="spec-grid reveal">
+            <!-- Specialization 1: Machine Learning -->
+            <div class="spec-card">
+                <div class="card-img-wrapper">
+                    <img src="assets/ml.png" alt="Machine Learning & AI" class="card-img">
                 </div>
+                <h3>Machine Learning & AI</h3>
+                <p>Delivering predictive insights, foundational model training, and custom automation algorithms to unlock deep patterns in complex enterprise data.</p>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content glass-card">
-                    <h3>2025: Enterprise Scaling</h3>
-                    <p>Launch of our proprietary predictive modeling framework, serving early enterprise partners across financial and healthcare sectors.</p>
+            <!-- Specialization 2: Generative AI -->
+            <div class="spec-card">
+                <div class="card-img-wrapper">
+                    <img src="assets/genai.png" alt="Generative AI" class="card-img">
                 </div>
+                <h3>Generative AI</h3>
+                <p>Enabling enterprise-scale content synthesis, customized vector databases, LLM adaptations, and semantic intelligence architectures.</p>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content glass-card">
-                    <h3>2026: Quantum Horizons</h3>
-                    <p>Global expansion and introduction of quantum-inspired neural accelerators for edge devices and autonomous robotics.</p>
+            <!-- Specialization 3: Agentic AI -->
+            <div class="spec-card">
+                <div class="card-img-wrapper">
+                    <img src="assets/agentic.png" alt="Agentic AI" class="card-img">
+                </div>
+                <h3>Agentic AI</h3>
+                <p>Orchestrating autonomous, self-correcting cognitive agents capable of planning, executing complex workflows, and utilizing tools independently.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Pipeline Section -->
+    <section id="integration-pipeline" class="pipeline-section" style="background-color: var(--color-bg-alt); max-width: none; width: 100%; border-top: 1px solid var(--color-ash-light); border-bottom: 1px solid var(--color-ash-light);">
+        <div style="max-width: 1400px; margin: 0 auto; padding: 0 5%;">
+            <div class="section-header reveal">
+                <div class="pill-badge"><span class="badge-dot"></span> ✦ BATTLE-TESTED PIPELINE</div>
+                <h2 class="gradient-text">4-Stage Integration Pipeline</h2>
+                <p>Our methodology guarantees secure and seamless deployment with zero operational downtime.</p>
+            </div>
+
+            <div class="pipeline-row reveal">
+                <div class="pipeline-track"></div>
+                
+                <div class="pipeline-node">
+                    <div class="pipeline-node-num">01</div>
+                    <h4>Ingest & Standardize</h4>
+                    <p>Cleaning and vectorizing enterprise data lakes for high-performance training.</p>
+                </div>
+                
+                <div class="pipeline-node">
+                    <div class="pipeline-node-num">02</div>
+                    <h4>Architect & Train</h4>
+                    <p>Neural networks designed and trained with state-of-the-art parameters.</p>
+                </div>
+                
+                <div class="pipeline-node">
+                    <div class="pipeline-node-num">03</div>
+                    <h4>Align & Stress Test</h4>
+                    <p>Rigorous adversarial tests to guarantee safety, correctness, and stability.</p>
+                </div>
+                
+                <div class="pipeline-node">
+                    <div class="pipeline-node-num">04</div>
+                    <h4>CI/CD Retraining</h4>
+                    <p>Continuous edge-to-cloud deployments with active monitoring feedback loops.</p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Bento Grid Core Values -->
-        <div class="section-header reveal" style="margin-top: 140px;">
-            <div class="pill-badge"><span class="badge-dot"></span> ✦ CORE ETHOS</div>
-            <h2 class="gradient-text">Architectural Principles</h2>
-            <p>The foundational pillars that govern our engineering, research, and enterprise integrations.</p>
+    <!-- Our Values Section -->
+    <section id="our-values" style="padding: 120px 5%;">
+        <div class="section-header reveal">
+            <div class="pill-badge"><span class="badge-dot"></span> ✦ CORE VALUES</div>
+            <h2 class="gradient-text">Our Ethical & Technical Values</h2>
+            <p>Aligning mathematical precision with ethical accountability.</p>
         </div>
 
-        <div class="bento-grid reveal">
-            <div class="bento-item bento-large">
-                <div>
-                    <div class="pill-badge" style="background: #fff;"><span class="badge-dot"></span> 01 / TRANSPARENCY</div>
-                    <h3>Explainable AI (XAI)</h3>
+        <div class="values-grid reveal">
+            <!-- Value 1: Innovation with Responsibility -->
+            <div class="value-card">
+                <div class="value-header">
+                    <div class="value-number">01</div>
                 </div>
-                <p>We reject the "black box" paradigm. Our neural architectures are engineered from the ground up to provide clear, audit-ready decision mapping and mathematical explainability for mission-critical enterprise workflows.</p>
+                <div>
+                    <h3>Innovation with Responsibility</h3>
+                    <p>Advancing artificial intelligence while strictly prioritizing safety guardrails, ethics, transparency, and data privacy.</p>
+                </div>
             </div>
-            <div class="bento-item">
-                <div>
-                    <div class="pill-badge"><span class="badge-dot"></span> 02 / SAFETY</div>
-                    <h3>Ethical Alignment</h3>
+
+            <!-- Value 2: Reliability at Scale -->
+            <div class="value-card">
+                <div class="value-header">
+                    <div class="value-number">02</div>
                 </div>
-                <p>Rigorous adversarial testing and alignment guardrails ensure our models operate strictly within defined ethical parameters.</p>
+                <div>
+                    <h3>Reliability at Scale</h3>
+                    <p>Building resilient, fault-tolerant neural architectures engineered for rock-solid security and enterprise-ready SLA operations.</p>
+                </div>
             </div>
-            <div class="bento-item">
-                <div>
-                    <div class="pill-badge"><span class="badge-dot"></span> 03 / SPEED</div>
-                    <h3>Hyper-Efficiency</h3>
+
+            <!-- Value 3: Human Empowerment -->
+            <div class="value-card">
+                <div class="value-header">
+                    <div class="value-number">03</div>
                 </div>
-                <p>Optimized parameter quantization allows our models to achieve state-of-the-art inference speeds with minimal compute overhead.</p>
+                <div>
+                    <h3>Human Empowerment</h3>
+                    <p>Designing cognitive workflows that augment, amplify, and empower human capabilities rather than replacing human potential.</p>
+                </div>
             </div>
-            <div class="bento-item bento-large">
-                <div>
-                    <div class="pill-badge" style="background: #fff;"><span class="badge-dot"></span> 04 / SCALABILITY</div>
-                    <h3>Infinite Horizontal Scaling</h3>
+        </div>
+    </section>
+
+    <!-- Our Vision Section -->
+    <section id="our-vision" style="padding: 100px 5%; background-color: var(--color-bg-alt); max-width: none; width: 100%; border-top: 1px solid var(--color-ash-light);">
+        <div style="max-width: 1400px; margin: 0 auto; padding: 0 5%;" class="reveal">
+            <div class="vision-pane">
+                <div class="vision-glow-bg"></div>
+                <div class="vision-pane-content">
+                    <div class="pill-badge"><span class="badge-dot"></span> ✦ OUR VISION</div>
+                    <h3 class="gradient-text">Built for the Cognitive Era</h3>
+                    <p>
+                        We are committed to shaping the future of AI by creating solutions where technology adapts to people, not the other way around. Together, we architect systems that define tomorrow's intelligence.
+                    </p>
                 </div>
-                <p>Our microservice-oriented model deployment pipelines are designed to scale effortlessly from single edge nodes to massive, multi-cloud distributed inference clusters.</p>
             </div>
         </div>
     </section>
