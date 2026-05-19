@@ -16,13 +16,13 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="fullpage-scroll">
 
     <app-cursor></app-cursor>
     <app-header></app-header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
+    <!-- SCREEN 1: Hero -->
+    <section id="screen1" class="fp-section hero-section">
         <div class="bg-grid"></div>
         <div class="hero-content reveal">
             <div class="pill-badge">
@@ -36,13 +36,9 @@
                 <a href="contact.html" class="btn btn-secondary">Initiate Ping</a>
             </div>
         </div>
-
-        <!-- 3D Neural Network Real Image Graphic with Floating Glass Cards -->
         <div class="hero-visual reveal">
             <div class="hero-graphic">
                 <img src="assets/hero.png" alt="AI Neural Globe" class="hero-img">
-
-                <!-- Floating Glassmorphism Stat Cards -->
                 <div class="floating-stat stat-left glass-card">
                     <div class="stat-icon">⚡</div>
                     <div class="stat-info">
@@ -50,7 +46,6 @@
                         <p>Inference Accuracy</p>
                     </div>
                 </div>
-
                 <div class="floating-stat stat-right glass-card">
                     <div class="stat-icon">✦</div>
                     <div class="stat-info">
@@ -62,239 +57,222 @@
         </div>
     </section>
 
-    <!-- Scrolling Service Cards Marquee -->
-    <section class="marquee-section">
-        <div class="marquee-container">
-            <div class="marquee-content">
-                <div class="marquee-card glass-card">
-                    <img src="assets/ml.png" alt="Machine Learning" class="marquee-card-img">
-                    <div class="marquee-card-body">
-                        <h4>Machine Learning</h4>
-                        <p>Predictive modeling & deep learning</p>
-                    </div>
-                </div>
-                <div class="marquee-card glass-card">
-                    <img src="assets/ai.png" alt="Artificial Intelligence" class="marquee-card-img">
-                    <div class="marquee-card-body">
-                        <h4>Artificial Intelligence</h4>
-                        <p>Cognitive decision engines</p>
-                    </div>
-                </div>
-                <div class="marquee-card glass-card">
-                    <img src="assets/genai.png" alt="Generative AI" class="marquee-card-img">
-                    <div class="marquee-card-body">
-                        <h4>Generative AI</h4>
-                        <p>LLMs & content synthesis</p>
-                    </div>
-                </div>
-                <div class="marquee-card glass-card">
-                    <img src="assets/agentic.png" alt="Agentic AI" class="marquee-card-img">
-                    <div class="marquee-card-body">
-                        <h4>Agentic AI</h4>
-                        <p>Autonomous cognitive agents</p>
-                    </div>
-                </div>
-                <div class="marquee-card glass-card">
-                    <img src="assets/finance.png" alt="Banking & Finance" class="marquee-card-img">
-                    <div class="marquee-card-body">
-                        <h4>Banking & Finance</h4>
-                        <p>Real-time fraud & asset modeling</p>
-                    </div>
-                </div>
-                <div class="marquee-card glass-card">
-                    <img src="assets/retail.png" alt="Retail & Supply Chain" class="marquee-card-img">
-                    <div class="marquee-card-body">
-                        <h4>Retail & Supply Chain</h4>
-                        <p>Demand forecasting & automation</p>
-                    </div>
-                </div>
-                <div class="marquee-card glass-card">
-                    <img src="assets/health.png" alt="MedTech & Healthcare" class="marquee-card-img">
-                    <div class="marquee-card-body">
-                        <h4>MedTech & Healthcare</h4>
-                        <p>Neural transformers & patient modeling</p>
-                    </div>
-                </div>
-                <div class="marquee-card glass-card">
-                    <img src="assets/hero.png" alt="Bespoke Neural Models" class="marquee-card-img">
-                    <div class="marquee-card-body">
-                        <h4>Bespoke Neural Models</h4>
-                        <p>Custom model training on secure data lakes</p>
-                    </div>
+    <!-- SCREEN 2: Our Services -->
+    <section id="screen2" class="fp-section" style="background: #0f172a;">
+        <div class="section-header reveal">
+            <div class="pill-badge" style="background: rgba(0,102,255,0.15); border-color: rgba(0,102,255,0.3); color: #7cb8ff;"><span class="badge-dot"></span> ✦ OUR CAPABILITIES</div>
+            <h2 class="gradient-text" style="background: linear-gradient(135deg, #ffffff 30%, #0066ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Intelligent Solutions</h2>
+            <p style="color: rgba(255,255,255,0.6);">Transforming complex enterprise challenges into automated, high-performance cognitive workflows.</p>
+        </div>
+        <div class="showcase-grid reveal" style="max-width: 1400px; margin: 0 auto;">
+            <div class="showcase-card">
+                <img src="assets/ml.png" alt="Machine Learning" class="showcase-card-bg">
+                <div class="showcase-card-overlay"></div>
+                <div class="showcase-card-content">
+                    <div class="showcase-card-tag">Predictive Analytics</div>
+                    <h3>Machine Learning</h3>
+                    <p>Custom deep learning algorithms and predictive models trained on proprietary data lakes.</p>
                 </div>
             </div>
-            <div class="marquee-content">
-                <div class="marquee-card glass-card">
-                    <img src="assets/ml.png" alt="Machine Learning" class="marquee-card-img">
-                    <div class="marquee-card-body">
-                        <h4>Machine Learning</h4>
-                        <p>Predictive modeling & deep learning</p>
-                    </div>
+            <div class="showcase-card">
+                <img src="assets/ai.png" alt="AI" class="showcase-card-bg">
+                <div class="showcase-card-overlay"></div>
+                <div class="showcase-card-content">
+                    <div class="showcase-card-tag">Decision Engines</div>
+                    <h3>Artificial Intelligence</h3>
+                    <p>Enterprise decision engines to automate complex reasoning and optimize operational yield.</p>
                 </div>
-                <div class="marquee-card glass-card">
-                    <img src="assets/ai.png" alt="Artificial Intelligence" class="marquee-card-img">
-                    <div class="marquee-card-body">
-                        <h4>Artificial Intelligence</h4>
-                        <p>Cognitive decision engines</p>
-                    </div>
+            </div>
+            <div class="showcase-card">
+                <img src="assets/genai.png" alt="Gen AI" class="showcase-card-bg">
+                <div class="showcase-card-overlay"></div>
+                <div class="showcase-card-content">
+                    <div class="showcase-card-tag">Content Synthesis</div>
+                    <h3>Generative AI</h3>
+                    <p>State-of-the-art LLMs and multimodal transformers for enterprise content synthesis.</p>
                 </div>
-                <div class="marquee-card glass-card">
-                    <img src="assets/genai.png" alt="Generative AI" class="marquee-card-img">
-                    <div class="marquee-card-body">
-                        <h4>Generative AI</h4>
-                        <p>LLMs & content synthesis</p>
-                    </div>
-                </div>
-                <div class="marquee-card glass-card">
-                    <img src="assets/agentic.png" alt="Agentic AI" class="marquee-card-img">
-                    <div class="marquee-card-body">
-                        <h4>Agentic AI</h4>
-                        <p>Autonomous cognitive agents</p>
-                    </div>
-                </div>
-                <div class="marquee-card glass-card">
-                    <img src="assets/finance.png" alt="Banking & Finance" class="marquee-card-img">
-                    <div class="marquee-card-body">
-                        <h4>Banking & Finance</h4>
-                        <p>Real-time fraud & asset modeling</p>
-                    </div>
-                </div>
-                <div class="marquee-card glass-card">
-                    <img src="assets/retail.png" alt="Retail & Supply Chain" class="marquee-card-img">
-                    <div class="marquee-card-body">
-                        <h4>Retail & Supply Chain</h4>
-                        <p>Demand forecasting & automation</p>
-                    </div>
-                </div>
-                <div class="marquee-card glass-card">
-                    <img src="assets/health.png" alt="MedTech & Healthcare" class="marquee-card-img">
-                    <div class="marquee-card-body">
-                        <h4>MedTech & Healthcare</h4>
-                        <p>Neural transformers & patient modeling</p>
-                    </div>
-                </div>
-                <div class="marquee-card glass-card">
-                    <img src="assets/hero.png" alt="Bespoke Neural Models" class="marquee-card-img">
-                    <div class="marquee-card-body">
-                        <h4>Bespoke Neural Models</h4>
-                        <p>Custom model training on secure data lakes</p>
-                    </div>
+            </div>
+            <div class="showcase-card">
+                <img src="assets/agentic.png" alt="Agentic AI" class="showcase-card-bg">
+                <div class="showcase-card-overlay"></div>
+                <div class="showcase-card-content">
+                    <div class="showcase-card-tag">Autonomous Agents</div>
+                    <h3>Agentic AI</h3>
+                    <p>Autonomous agents with multi-step tool use, dynamic planning, and self-correction.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 8-Stage Deployment Carousel -->
-    <section style="padding-top: 120px; padding-bottom: 80px;">
-        <div class="section-header reveal">
-            <div class="pill-badge"><span class="badge-dot"></span> ✦ INTEGRATION PIPELINE</div>
-            <h2 class="gradient-text">Deployment Methodology</h2>
-            <p>Our battle-tested, 8-stage deployment architecture ensures seamless integration with zero operational downtime.</p>
-        </div>
-
-        <div class="carousel-wrapper reveal" id="pipelineCarousel">
-            <button class="carousel-arrow carousel-prev" aria-label="Previous">&larr;</button>
-            <div class="carousel-viewport">
-                <div class="carousel-track">
-                    <div class="carousel-slide">
-                        <div class="carousel-card glass-card">
-                            <div class="carousel-card-num">01</div>
-                            <h3>Scope &amp; Audit</h3>
-                            <p>Reviewing existing data infrastructures, enterprise security models, and compliance requirements before initiating any integration work.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-slide">
-                        <div class="carousel-card glass-card">
-                            <div class="carousel-card-num">02</div>
-                            <h3>Data Ingestion &amp; Cleaning</h3>
-                            <p>Automated ETL pipelines sanitize, normalize, and structure complex enterprise data lakes into high-fidelity feature vectors.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-slide">
-                        <div class="carousel-card glass-card">
-                            <div class="carousel-card-num">03</div>
-                            <h3>Align &amp; Vectorize</h3>
-                            <p>Enhancing training sets with semantic metadata, embedding alignment, and building enterprise validation checkpoints.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-slide">
-                        <div class="carousel-card glass-card">
-                            <div class="carousel-card-num">04</div>
-                            <h3>Architecture Design</h3>
-                            <p>Designing custom neural network topologies and choosing optimal hyperparameter sets for target enterprise use cases.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-slide">
-                        <div class="carousel-card glass-card">
-                            <div class="carousel-card-num">05</div>
-                            <h3>Distributed Training</h3>
-                            <p>Training model parameters across massive multi-GPU cloud compute clusters to achieve optimal convergence and accuracy.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-slide">
-                        <div class="carousel-card glass-card">
-                            <div class="carousel-card-num">06</div>
-                            <h3>Adversarial Guardrails</h3>
-                            <p>Rigorous stress-testing against edge cases, hallucination vectors, and prompt injection attacks to guarantee stability.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-slide">
-                        <div class="carousel-card glass-card">
-                            <div class="carousel-card-num">07</div>
-                            <h3>CI/CD Edge Deployment</h3>
-                            <p>Containerizing and deploying optimized models to secure private clouds, hybrid environments, and air-gapped on-premise nodes.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-slide">
-                        <div class="carousel-card glass-card">
-                            <div class="carousel-card-num">08</div>
-                            <h3>Telemetry &amp; Retraining</h3>
-                            <p>Continuous model monitoring with active drift detection, automated feedback loops, and scheduled retraining pipelines.</p>
-                        </div>
-                    </div>
+    <!-- SCREEN 3: Scrolling Marquee -->
+    <section id="screen3" class="fp-section marquee-section" style="display: flex; align-items: center;">
+        <div style="width: 100%;">
+            <div class="section-header reveal" style="padding-bottom: 40px;">
+                <div class="pill-badge"><span class="badge-dot"></span> ✦ TECHNOLOGY STACK</div>
+                <h2 class="gradient-text">Core Expertise</h2>
+                <p>Our comprehensive stack spans every layer of the modern AI pipeline.</p>
+            </div>
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <div class="marquee-card glass-card"><img src="assets/ml.png" alt="ML" class="marquee-card-img"><div class="marquee-card-body"><h4>Machine Learning</h4><p>Predictive modeling &amp; deep learning</p></div></div>
+                    <div class="marquee-card glass-card"><img src="assets/ai.png" alt="AI" class="marquee-card-img"><div class="marquee-card-body"><h4>Artificial Intelligence</h4><p>Cognitive decision engines</p></div></div>
+                    <div class="marquee-card glass-card"><img src="assets/genai.png" alt="GenAI" class="marquee-card-img"><div class="marquee-card-body"><h4>Generative AI</h4><p>LLMs &amp; content synthesis</p></div></div>
+                    <div class="marquee-card glass-card"><img src="assets/agentic.png" alt="Agentic" class="marquee-card-img"><div class="marquee-card-body"><h4>Agentic AI</h4><p>Autonomous cognitive agents</p></div></div>
+                    <div class="marquee-card glass-card"><img src="assets/finance.png" alt="Finance" class="marquee-card-img"><div class="marquee-card-body"><h4>Banking &amp; Finance</h4><p>Real-time fraud &amp; asset modeling</p></div></div>
+                    <div class="marquee-card glass-card"><img src="assets/retail.png" alt="Retail" class="marquee-card-img"><div class="marquee-card-body"><h4>Retail &amp; Supply Chain</h4><p>Demand forecasting &amp; automation</p></div></div>
+                    <div class="marquee-card glass-card"><img src="assets/health.png" alt="Health" class="marquee-card-img"><div class="marquee-card-body"><h4>MedTech &amp; Healthcare</h4><p>Neural transformers &amp; patient modeling</p></div></div>
+                    <div class="marquee-card glass-card"><img src="assets/hero.png" alt="Custom" class="marquee-card-img"><div class="marquee-card-body"><h4>Bespoke Neural Models</h4><p>Custom model training on secure data lakes</p></div></div>
                 </div>
-            </div>
-            <button class="carousel-arrow carousel-next" aria-label="Next">&rarr;</button>
-
-            <!-- Progress Line -->
-            <div class="carousel-progress">
-                <div class="carousel-progress-bar" id="carouselProgressBar"></div>
-            </div>
-
-            <!-- Dot Indicators -->
-            <div class="carousel-dots" id="carouselDots">
-                <button class="carousel-dot active" data-index="0"></button>
-                <button class="carousel-dot" data-index="1"></button>
-                <button class="carousel-dot" data-index="2"></button>
-                <button class="carousel-dot" data-index="3"></button>
-                <button class="carousel-dot" data-index="4"></button>
-                <button class="carousel-dot" data-index="5"></button>
-                <button class="carousel-dot" data-index="6"></button>
-                <button class="carousel-dot" data-index="7"></button>
+                <div class="marquee-content">
+                    <div class="marquee-card glass-card"><img src="assets/ml.png" alt="ML" class="marquee-card-img"><div class="marquee-card-body"><h4>Machine Learning</h4><p>Predictive modeling &amp; deep learning</p></div></div>
+                    <div class="marquee-card glass-card"><img src="assets/ai.png" alt="AI" class="marquee-card-img"><div class="marquee-card-body"><h4>Artificial Intelligence</h4><p>Cognitive decision engines</p></div></div>
+                    <div class="marquee-card glass-card"><img src="assets/genai.png" alt="GenAI" class="marquee-card-img"><div class="marquee-card-body"><h4>Generative AI</h4><p>LLMs &amp; content synthesis</p></div></div>
+                    <div class="marquee-card glass-card"><img src="assets/agentic.png" alt="Agentic" class="marquee-card-img"><div class="marquee-card-body"><h4>Agentic AI</h4><p>Autonomous cognitive agents</p></div></div>
+                    <div class="marquee-card glass-card"><img src="assets/finance.png" alt="Finance" class="marquee-card-img"><div class="marquee-card-body"><h4>Banking &amp; Finance</h4><p>Real-time fraud &amp; asset modeling</p></div></div>
+                    <div class="marquee-card glass-card"><img src="assets/retail.png" alt="Retail" class="marquee-card-img"><div class="marquee-card-body"><h4>Retail &amp; Supply Chain</h4><p>Demand forecasting &amp; automation</p></div></div>
+                    <div class="marquee-card glass-card"><img src="assets/health.png" alt="Health" class="marquee-card-img"><div class="marquee-card-body"><h4>MedTech &amp; Healthcare</h4><p>Neural transformers &amp; patient modeling</p></div></div>
+                    <div class="marquee-card glass-card"><img src="assets/hero.png" alt="Custom" class="marquee-card-img"><div class="marquee-card-body"><h4>Bespoke Neural Models</h4><p>Custom model training on secure data lakes</p></div></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Statistics Section -->
-    <section class="stats-section">
-        <div class="section-header reveal">
-            <div class="pill-badge"><span class="badge-dot"></span> PROVEN IMPACT</div>
-            <h2 class="gradient-text">Uncompromising Performance</h2>
-            <p>Our autonomous architectures deliver unprecedented efficiency and scaling capabilities across enterprise
-                sectors.</p>
+    <!-- SCREEN 4: Industries We Serve -->
+    <section id="screen4" class="fp-section" style="background: var(--color-bg-alt); display: flex; align-items: center; justify-content: center;">
+        <div style="max-width: 1400px; width: 100%; padding: 0 5%;">
+            <div class="section-header reveal">
+                <div class="pill-badge"><span class="badge-dot"></span> ✦ BUILT FOR YOUR INDUSTRY</div>
+                <h2 class="gradient-text">Industry-Specific AI</h2>
+                <p>Tailored solutions across critical enterprise verticals from finance to healthcare.</p>
+            </div>
+            <div class="services-grid reveal" style="margin-top: 60px;">
+                <div class="service-card">
+                    <div class="service-icon" style="font-size: 2rem;">🏦</div>
+                    <h3>Banking &amp; Finance</h3>
+                    <p>Real-time transaction monitoring, anomaly detection, credit risk scoring, and AML compliance powered by deep learning.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon" style="font-size: 2rem;">🛒</div>
+                    <h3>Retail &amp; E-Commerce</h3>
+                    <p>Computer vision inventory tracking, demand forecasting, dynamic pricing, and hyper-personalized recommendation engines.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon" style="font-size: 2rem;">🏥</div>
+                    <h3>Healthcare &amp; MedTech</h3>
+                    <p>Vision transformers for medical imaging, predictive patient outcomes, and generative AI for drug discovery pipelines.</p>
+                </div>
+            </div>
         </div>
-        <div class="stats-grid reveal">
-            <div class="stat-box glass-card">
-                <div class="stat-number" data-count="10" data-suffix="x">0</div>
-                <div class="stat-label">Workflow Efficiency ROI</div>
+    </section>
+
+    <!-- SCREEN 5: Deployment Methodology Carousel -->
+    <section id="screen5" class="fp-section" style="display: flex; align-items: center; justify-content: center;">
+        <div style="width: 100%; padding: 0 5%;">
+            <div class="section-header reveal">
+                <div class="pill-badge"><span class="badge-dot"></span> ✦ INTEGRATION PIPELINE</div>
+                <h2 class="gradient-text">Deployment Methodology</h2>
+                <p>Our battle-tested, 8-stage deployment architecture ensures seamless integration with zero operational downtime.</p>
             </div>
-            <div class="stat-box glass-card">
-                <div class="stat-number" data-count="99.9" data-suffix="%">0</div>
-                <div class="stat-label">Model Uptime & Reliability</div>
+
+            <div class="carousel-wrapper reveal" id="pipelineCarousel">
+                <button class="carousel-arrow carousel-prev" aria-label="Previous">&larr;</button>
+                <div class="carousel-viewport">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><div class="carousel-card glass-card"><div class="carousel-card-num">01</div><h3>Scope &amp; Audit</h3><p>Reviewing existing data infrastructures, enterprise security models, and compliance requirements.</p></div></div>
+                        <div class="carousel-slide"><div class="carousel-card glass-card"><div class="carousel-card-num">02</div><h3>Data Ingestion &amp; Cleaning</h3><p>Automated ETL pipelines sanitize, normalize, and structure enterprise data lakes into feature vectors.</p></div></div>
+                        <div class="carousel-slide"><div class="carousel-card glass-card"><div class="carousel-card-num">03</div><h3>Align &amp; Vectorize</h3><p>Enhancing training sets with semantic metadata, embedding alignment, and validation checkpoints.</p></div></div>
+                        <div class="carousel-slide"><div class="carousel-card glass-card"><div class="carousel-card-num">04</div><h3>Architecture Design</h3><p>Designing custom neural network topologies and choosing optimal hyperparameter sets.</p></div></div>
+                        <div class="carousel-slide"><div class="carousel-card glass-card"><div class="carousel-card-num">05</div><h3>Distributed Training</h3><p>Training across massive multi-GPU cloud compute clusters for optimal convergence and accuracy.</p></div></div>
+                        <div class="carousel-slide"><div class="carousel-card glass-card"><div class="carousel-card-num">06</div><h3>Adversarial Guardrails</h3><p>Rigorous stress-testing against edge cases, hallucinations, and prompt injection attacks.</p></div></div>
+                        <div class="carousel-slide"><div class="carousel-card glass-card"><div class="carousel-card-num">07</div><h3>CI/CD Edge Deployment</h3><p>Containerizing and deploying optimized models to secure private clouds and air-gapped nodes.</p></div></div>
+                        <div class="carousel-slide"><div class="carousel-card glass-card"><div class="carousel-card-num">08</div><h3>Telemetry &amp; Retraining</h3><p>Continuous monitoring with drift detection, feedback loops, and scheduled retraining pipelines.</p></div></div>
+                    </div>
+                </div>
+                <button class="carousel-arrow carousel-next" aria-label="Next">&rarr;</button>
+                <div class="carousel-progress"><div class="carousel-progress-bar" id="carouselProgressBar"></div></div>
+                <div class="carousel-dots" id="carouselDots">
+                    <button class="carousel-dot active" data-index="0"></button>
+                    <button class="carousel-dot" data-index="1"></button>
+                    <button class="carousel-dot" data-index="2"></button>
+                    <button class="carousel-dot" data-index="3"></button>
+                    <button class="carousel-dot" data-index="4"></button>
+                    <button class="carousel-dot" data-index="5"></button>
+                    <button class="carousel-dot" data-index="6"></button>
+                    <button class="carousel-dot" data-index="7"></button>
+                </div>
             </div>
-            <div class="stat-box glass-card">
-                <div class="stat-number" data-count="250" data-suffix="+">0</div>
-                <div class="stat-label">Enterprise Deployments</div>
+        </div>
+    </section>
+
+    <!-- SCREEN 6: Statistics / Proven Impact -->
+    <section id="screen6" class="fp-section stats-section" style="display: flex; align-items: center; justify-content: center;">
+        <div style="width: 100%; padding: 0 5%;">
+            <div class="section-header reveal">
+                <div class="pill-badge"><span class="badge-dot"></span> PROVEN IMPACT</div>
+                <h2 class="gradient-text">Uncompromising Performance</h2>
+                <p>Our autonomous architectures deliver unprecedented efficiency and scaling capabilities across enterprise sectors.</p>
+            </div>
+            <div class="stats-grid reveal">
+                <div class="stat-box glass-card">
+                    <div class="stat-number" data-count="10" data-suffix="x">0</div>
+                    <div class="stat-label">Workflow Efficiency ROI</div>
+                </div>
+                <div class="stat-box glass-card">
+                    <div class="stat-number" data-count="99.9" data-suffix="%">0</div>
+                    <div class="stat-label">Model Uptime &amp; Reliability</div>
+                </div>
+                <div class="stat-box glass-card">
+                    <div class="stat-number" data-count="250" data-suffix="+">0</div>
+                    <div class="stat-label">Enterprise Deployments</div>
+                </div>
+                <div class="stat-box glass-card">
+                    <div class="stat-number" data-count="50" data-suffix="M+">0</div>
+                    <div class="stat-label">Daily API Requests</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCREEN 7: Why ML LABS -->
+    <section id="screen7" class="fp-section" style="background: #0f172a; display: flex; align-items: center; justify-content: center;">
+        <div style="max-width: 1000px; width: 100%; padding: 0 5%; text-align: center;">
+            <div class="section-header reveal">
+                <div class="pill-badge" style="background: rgba(0,102,255,0.15); border-color: rgba(0,102,255,0.3); color: #7cb8ff;"><span class="badge-dot"></span> ✦ WHY ML LABS</div>
+                <h2 style="color: #ffffff; font-size: var(--text-4xl); margin-bottom: 32px;">Built for the <span style="background: linear-gradient(135deg, #0066ff, #4d9fff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Cognitive Era</span></h2>
+                <p style="color: rgba(255,255,255,0.65); font-size: var(--text-lg); line-height: 1.8; max-width: 800px; margin: 0 auto 48px;">
+                    We combine deep technical expertise with human-centered design to deliver AI solutions that are not only powerful but also accessible, responsible, and production-ready from day one.
+                </p>
+            </div>
+            <div class="reveal" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; text-align: left;">
+                <div style="padding: 36px; border-radius: 24px; border: 1px solid rgba(0,102,255,0.25); background: rgba(255,255,255,0.03);">
+                    <h3 style="color: #ffffff; font-size: var(--text-xl); margin-bottom: 12px;">🔒 Zero-Retention Policy</h3>
+                    <p style="color: rgba(255,255,255,0.5); font-size: var(--text-sm); line-height: 1.6;">Your proprietary data is never shared, pooled, or retained on our training clusters.</p>
+                </div>
+                <div style="padding: 36px; border-radius: 24px; border: 1px solid rgba(0,102,255,0.25); background: rgba(255,255,255,0.03);">
+                    <h3 style="color: #ffffff; font-size: var(--text-xl); margin-bottom: 12px;">⚡ Air-Gap Ready</h3>
+                    <p style="color: rgba(255,255,255,0.5); font-size: var(--text-sm); line-height: 1.6;">Full on-premise bare-metal, private cloud, and hybrid multi-cloud deployment support.</p>
+                </div>
+                <div style="padding: 36px; border-radius: 24px; border: 1px solid rgba(0,102,255,0.25); background: rgba(255,255,255,0.03);">
+                    <h3 style="color: #ffffff; font-size: var(--text-xl); margin-bottom: 12px;">🧠 Explainable AI</h3>
+                    <p style="color: rgba(255,255,255,0.5); font-size: var(--text-sm); line-height: 1.6;">Transparent model reasoning with built-in dashboards for regulatory and audit compliance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCREEN 8: Call to Action -->
+    <section id="screen8" class="fp-section" style="display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-bg) 0%, rgba(230,240,255,0.6) 100%);">
+        <div style="max-width: 800px; text-align: center; padding: 0 5%;">
+            <div class="section-header reveal">
+                <div class="pill-badge"><span class="badge-dot"></span> ✦ GET STARTED</div>
+                <h2 class="gradient-text" style="font-size: var(--text-4xl);">Ready to Transform Your Enterprise?</h2>
+                <p style="font-size: var(--text-lg); line-height: 1.8; margin-bottom: 48px;">
+                    Connect with our AI deployment architects to explore custom neural integrations tailored to your organization's unique data infrastructure.
+                </p>
+                <div class="hero-buttons" style="justify-content: center;">
+                    <a href="contact.html" class="btn btn-primary" style="font-size: var(--text-lg); padding: 20px 48px;">Initiate Enterprise Ping <span class="btn-glow"></span></a>
+                    <a href="about.html" class="btn btn-secondary" style="font-size: var(--text-lg); padding: 20px 48px;">Learn About Us</a>
+                </div>
             </div>
         </div>
     </section>

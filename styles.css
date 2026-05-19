@@ -48,6 +48,21 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Full-Page Scroll Snap (Home Page 8 Screens) */
+.fullpage-scroll {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.fp-section {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    position: relative;
+    overflow: hidden;
+}
+
 /* Custom Cursor */
 .cursor-dot, .cursor-glow {
     position: fixed;
