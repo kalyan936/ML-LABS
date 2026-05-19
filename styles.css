@@ -423,9 +423,12 @@ section {
 
 .hero-graphic {
     position: relative;
-    width: 450px;
-    height: 450px;
+    width: 100%;
+    max-width: 520px;
     perspective: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sphere {
@@ -506,7 +509,8 @@ section {
     border-top: 1px solid var(--color-ash-light);
     border-bottom: 1px solid var(--color-ash-light);
     overflow: hidden;
-    max-width: 100%;
+    max-width: none;
+    width: 100%;
 }
 
 .marquee-container {
@@ -662,7 +666,7 @@ section {
 /* Process Section */
 .process-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 32px;
     position: relative;
 }
@@ -1030,6 +1034,7 @@ section.showcase-section .pill-badge {
     .bento-large { grid-column: span 1; }
     .showcase-grid { height: 450px; }
     .showcase-card-content h3 { font-size: var(--text-xl); }
+    .process-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
@@ -1046,6 +1051,7 @@ section.showcase-section .pill-badge {
     .cursor-dot, .cursor-glow { display: none; }
     body { cursor: auto; }
     a, .btn, .menu-toggle { cursor: pointer; }
+    .process-grid { grid-template-columns: 1fr; }
     .showcase-grid { flex-direction: column; height: auto; gap: 16px; }
     .showcase-card { min-height: 280px; flex: none; }
     .showcase-card:hover { flex: none; }

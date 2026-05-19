@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. 3D Vanilla Tilt Physics (Cards & Bento Grid)
-    const tiltElements = document.querySelectorAll('.service-card, .glass-card, .bento-item, .info-card');
+    // 3. 3D Vanilla Tilt Physics (Cards & Bento Grid) — excludes showcase & marquee cards
+    const tiltElements = document.querySelectorAll('.service-card, .bento-item, .info-card, .stat-box, .process-step');
     if (window.innerWidth > 768) {
         tiltElements.forEach(el => {
             el.addEventListener('mousemove', (e) => {
