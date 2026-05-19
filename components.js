@@ -54,7 +54,7 @@ class AppFooter extends HTMLElement {
                 <div class="footer-brand">
                     <a href="index.html" class="logo"><img src="logo.jpg" alt="ML LABS Logo" class="brand-logo"> <span class="logo-text">ML LABS</span></a>
                     <p>#52, 3rd Cross, Aswath Nagar, Marathahalli, Bengaluru, Karnataka-560037</p>
-                    <p style="margin-top: 8px;">hr@themllabs.com | bharath@themllabs.com</p>
+                    <p style="margin-top: 8px;">hr@themllabs.com   bharath@themllabs.com</p>
                 </div>
                 <div class="footer-links">
                     <h4>Navigation</h4>
